@@ -6,6 +6,38 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "data"
+    label: "Data"
+    folder: "src/pages/data"
+    create: true
+    slug: "{{ba}}"
+    fields:
+      - label: A
+        name: a
+        widget: object
+        fields:
+        - label: AA
+          name: aa
+          widget: object
+          fields:
+          - label: AAA
+            name: aaa
+            widget: string
+          - label: AAB
+            name: aab
+            widget: string
+        - label: AB
+          name: ab
+          widget: string
+      - label: B
+        name: foo
+        widget: object
+        fields:
+        - label: BA
+          name: ba
+          widget: string
+
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
