@@ -11,31 +11,34 @@ collections:
   - label: "Page Data"
     name: "pagedata"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "src/pages/about/about.yml"
+      - label: "Foo"
+        name: "foo"
+        file: "src/foo.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
+          - label: A
+            name: a
+            widget: object
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Products Page"
-        name: "products"
-        file: "src/pages/product/product.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
+            - label: AA
+              name: aa
+              widget: object
+              fields:
+              - label: AAA
+                name: aaa
+                widget: string
+              - label: AAB
+                name: aab
+                widget: string
+            - label: AB
+              name: ab
+              widget: string
+          - label: B
+            name: foo
+            widget: object
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+            - label: BA
+              name: ba
+              widget: string
               
   - name: "data"
     label: "Data"
