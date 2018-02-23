@@ -8,8 +8,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Page Data"
+    name: "pagedata"
     files:
       - label: "About Page"
         name: "about"
